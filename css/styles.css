@@ -1,0 +1,281 @@
+/*
+Colors:
+            Dark pink:      #B66D63
+			75% Grey:		#636466
+			50% Grey:		#231f20
+			25% Grey:		#c7c8ca
+Fonts:
+                font-family: 'Playfair Display', serif;
+                font-family: 'Raleway', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway&display=swap');
+/*	General styles	*/
+* {
+	box-sizing: border-box;
+}
+
+
+h1,h2,h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #B66D63;
+}
+
+p {
+    color: #333;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    background-color: #fff; 
+}
+
+body {
+    margin: auto;
+}
+
+.navbar {
+	text-align: center;
+	background-color: #B66D63;
+	font-weight: bolder;
+}
+
+.navbar ul {
+	display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li {
+	display: flex;
+	align-content: right;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.navbar a:hover {
+    color: #000;
+}
+
+.logo {
+    max-width: 10%;
+}
+
+figcaption {
+    color: #6f7a85;
+}
+
+.fab {
+	color: #B66D63;
+}
+
+/*	home.html styles	*/
+.title {
+    text-align: left;
+}
+
+.wrapper {
+    padding: 2rem;    
+}
+
+.divider {
+	height:2px;
+	border-width:0;
+	color:#231f20;
+	background-color:#6f7a85;
+}
+
+.superhead {
+    background-color: antiquewhite;
+    background-image: url(../img/bg.jpg);
+	background-color: #bfbfbf;
+	background-blend-mode: overlay;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.superhead h1 {
+    margin: 0 10rem;
+    padding:8rem 0;
+    color: #ffffff;
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+    max-width: 70rem;
+    padding: 1rem 1.8rem;
+}
+
+.container p{
+    text-align: left;
+}
+
+/*	portfolio.html styles	*/
+.thumbnail-t {
+    border-bottom: solid 1px #ccc;
+}
+
+.thumbnail-t figure{
+    padding-bottom: 2rem;
+}
+
+/*	Footer styles	*/
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+footer a {
+    margin: 1rem;
+	font-size: 0.75rem;
+	color: #636466;
+	font-weight: bolder;
+}
+
+.social {
+	margin: 1.5rem;
+}
+
+.foot {
+	background-color: #B66D63;
+	color: #ffffff;
+	font-weight: bolder;
+    width: 100%;
+	padding: 1.2rem;
+}
+
+.foot p {
+	color: #ffffff;
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* MOBILE */
+
+@media only screen and (max-width: 35rem) {
+    html {
+        font-size: 0.75rem; 
+        line-height: 1.4rem;
+    }
+    
+    .navbar {
+        padding-top: 2rem;
+    }
+    
+    .navbar li {
+        padding: 1rem;
+        border-top: solid 1px #5d676e;
+        width: 60%;
+        margin: auto;
+    }
+    
+    .superhead h1 {
+        margin: auto;
+        text-align: center;
+    }
+}
+
+/* TABLET */
+
+@media only screen and (max-width: 80rem) and (min-width: 35rem) {
+    html {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar ul {
+        display: inline-flex;
+    }
+    
+    .superhead h1 {
+        margin: auto;
+        padding:6rem 1rem;
+    }
+    
+/*	home.html styles */
+
+    .content-01 {
+        width: 40%;
+        float: left;
+        margin: 0;
+        padding-right: 2rem;
+    }
+
+/* portfolio.html styles */
+    .thumbnail-t {
+        display: inline-flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        margin: 0;
+        justify-content: space-around;
+    }
+    
+    .thumbnail-t figure {
+        margin: 0; 
+        width: 40%;
+    }
+}
+    
+/* Desktop */
+@media only screen and (min-width: 80rem) {
+    html {
+        font-size: 1.15rem; 
+        line-height: 1rem;
+    }
+
+/*	home.html styles */
+    .wrapper {
+        display: flex;
+        margin: auto;
+    }
+    
+    .wrapper p {
+        width: 60%;
+    }
+    
+    .content-01 {
+        width: 40%;
+        margin: 0;
+        padding-right: 2rem;
+    }
+    
+/* portfolio.html styles */
+    .thumbnail-t {
+        display: inline-flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        margin: auto;
+    }
+    
+    .thumbnail-t img {
+        width: 300px;
+        height: auto;
+    }
+}
